@@ -1,0 +1,38 @@
+.containers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid #2294ed;
+    margin-top: 25vh;
+    margin-right: 45rem;
+    margin-left: 45rem;
+    padding: 4rem;
+    border-radius: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 1.1rem;
+margin: 1rem;
+flex-direction: column;
+}
+
+.signin {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
