@@ -330,9 +330,10 @@ header {
 }
 
 .examples-area {
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-block: 30px;
     flex-wrap: wrap;
+    gap: 40px;
 }
 
 .examples-card {
@@ -343,6 +344,7 @@ header {
     background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(asset\ 35.jpeg);
     background-size: cover;
     transition: 0.2s ease-out;
+    min-width: 250px;
 }
 
 .examples-card:hover {
