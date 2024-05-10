@@ -104,6 +104,8 @@ ul {
 .secondary-button:hover {
     border-color: var(--accent-color);
     color: var(--accent-color) !important;
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
 }
 
 /* top banner */
@@ -230,6 +232,10 @@ header {
     gap: 20px;
     max-width: 30%;
     text-align: center;
+}
+.features-card:hover{
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
 }
 
 .features-card img {
