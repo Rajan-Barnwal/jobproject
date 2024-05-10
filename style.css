@@ -125,10 +125,12 @@ ul {
 .main-nav {
     margin-top: 20px;
     justify-content: space-between;
+    background-color: #ccc;
 }
 
 .company-logo img {
     width: 200px;
+    padding: 20px;
 }
 
 .nav-links {
@@ -139,7 +141,16 @@ ul {
     justify-content: end;
     gap: 40px;
 }
+.nav-links a{
+    border: 1px transparent solid;
+    border-radius: 2px;
+    padding:4px;
 
+}
+.nav-links a:hover{
+    background-color: #ebf2fa;
+
+}
 .nav-toggle {
     display: none;
 }
