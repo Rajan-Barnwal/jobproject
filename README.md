@@ -1,7 +1,6 @@
 ---
 ### Welcome to Job-Portal 🚀 
- **Introduction**
- JobConnect Hub, a pioneering platform crafted to unite job seekers and employers, cultivating synergy, progression, and prosperity in the professional landscape. Our objective is to equip job seekers with the tools, networks, and assistance essential for their career advancement, while also enabling employers to identify and recruit top talent seamlessly.
+
 
 ---
 **Getting Started**
@@ -33,7 +32,3 @@ Contributing Contributions are always welcome!
      Please ensure you compare your feature branch to the desired branch
      of the repo you are suppose to make a PR to.
      ***
-> Voila 🎉 You have made a PR to the StartConnect-Hub project. Sit back
-
-> patiently and relax while the project maintainers review your PR.
-   
