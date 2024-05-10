@@ -82,10 +82,11 @@ ul {
     border-radius: 6px;
     font-weight: 700;
     color: white !important;
-    padding: 12px 24px;
+    padding: 5px 40px;
     box-shadow: 0 0 2px var(--secondary-text-color);
     transition: 0.2s ease-out;
     text-align: center;
+    margin-top:6px;
 }
 
 .primary-button:hover {
@@ -97,8 +98,9 @@ ul {
     border-radius: 6px;
     font-weight: 700;
     color: var(--primary-text-color) !important;
-    padding: 12px 24px;
+    padding: 5px 40px;
     transition: 0.2s ease-out;
+    margin-top:6px;
 }
 
 .secondary-button:hover {
@@ -123,12 +125,18 @@ ul {
 /* nav bar */
 
 .main-nav {
-    margin-top: 20px;
+    margin-top: 40px;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    margin-left: 50px;
 }
 
 .company-logo img {
     width: 200px;
+    visibility: visible;
 }
 
 .nav-links {
@@ -140,9 +148,45 @@ ul {
     gap: 40px;
 }
 
+.nav-links ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+.nav-links ul li {
+    display: inline;
+    margin-right: 20px;
+    white-space: nowrap;
+}
+
+.nav-links ul li:last-child {
+    margin-right: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black
+}
+
 .nav-toggle {
     display: none;
 }
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+}
+
 
 /* header section */
 
