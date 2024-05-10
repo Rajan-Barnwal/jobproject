@@ -106,6 +106,8 @@ ul {
 .secondary-button:hover {
     border-color: var(--accent-color);
     color: var(--accent-color) !important;
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
 }
 
 /* top banner */
@@ -127,16 +129,23 @@ ul {
 .main-nav {
     margin-top: 40px;
     justify-content: space-between;
+
     position: fixed;
     top: 0;
     width: 100%;
     padding: 10px 0;
     margin-left: 50px;
+
+    background-color: #ccc
 }
 
 .company-logo img {
     width: 200px;
+
     visibility: visible;
+
+    padding: 20px;
+
 }
 
 .nav-links {
@@ -147,6 +156,15 @@ ul {
     justify-content: end;
     gap: 40px;
 }
+.nav-links a{
+    border: 1px transparent solid;
+    border-radius: 2px;
+    padding:4px;
+
+}
+.nav-links a:hover{
+    background-color: #ebf2fa;
+
 
 .nav-links ul {
    list-style: none;
@@ -167,6 +185,9 @@ ul {
 .nav-links a {
     text-decoration: none;
     color: black
+}
+
+
 }
 
 .nav-toggle {
@@ -263,6 +284,10 @@ header {
     gap: 20px;
     max-width: 30%;
     text-align: center;
+}
+.features-card:hover{
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
 }
 
 .features-card img {
@@ -425,3 +450,5 @@ button {
     color: red;
     margin-top: 10px;
 }
+
+
