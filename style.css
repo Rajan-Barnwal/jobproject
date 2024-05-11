@@ -124,17 +124,65 @@ ul {
     text-align: center;
 }
 
-/* nav bar */
+#nav-list {
+    position: fixed;
+    display: none;
+}
+
+#nav-list.show {
+    position:relative;
+    display:flex;
+    flex-wrap: wrap;
+    
+    
+    
+    
+}
+
+
+
+.nav-toggle
+{
+    text-align: center;
+    
+}
+
+
+
+/*.nav-links {
+    position: absolute;
+    top: calc(100% + 10px); 
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-direction: column; /* Changed from row to column */
+    /*padding: 0; 
+    z-index: 1; 
+}*/
+
+/*.nav-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-bottom: 10px; /* Adjust the margin between links 
+}*/
+
+
+
+
+
 
 .main-nav {
     margin-top: 40px;
     justify-content: space-between;
 
-    position: fixed;
+    position: relative;
     top: 0;
     width: 100%;
-    padding: 10px 0;
-    margin-left: 50px;
+    padding: 10px 10;
+    left: 0;
 
     background-color: #ccc
 }
@@ -147,66 +195,52 @@ ul {
     padding: 20px;
 
 }
-
-.nav-links {
-    flex-basis: 730px;
+/*.nav-links {
+    position: absolute;
+    top: calc(100% + 10px); 
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-direction: column; 
+    padding: 0; 
+    z-index: 1; 
 }
 
-.nav-links ul {
-    justify-content: end;
-    gap: 40px;
-}
-.nav-links a{
-    border: 1px transparent solid;
-    border-radius: 2px;
-    padding:4px;
-
-}
-.nav-links a:hover{
-    background-color: #ebf2fa;
-
-
-.nav-links ul {
-   list-style: none;
-   padding: 0;
-   margin: 0;
+/*.nav-links ul {
+    list-style: none;
+    padding: 0;
 }
 
-.nav-links ul li {
-    display: inline;
-    margin-right: 20px;
-    white-space: nowrap;
-}
-
-.nav-links ul li:last-child {
-    margin-right: 0;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: black
-}
-
-
+.nav-links li {
+    margin-bottom: 10px;
 }
 
 .nav-toggle {
-    display: none;
+    text-align: right;
 }
 
-@media screen and (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
-
-    .nav-toggle {
-        display: block;
-    }
-
-    .nav-links.active {
-        display: block;
-    }
+.nav-toggle i {
+    cursor: pointer;
 }
+
+.nav-toggle i.fa-bars {
+    display: none; 
+}
+
+
+.nav-toggle 
+{
+        display: block; 
+}
+
+.nav-toggle i.fa-bars 
+{
+        display: inline-block; 
+ }*/
+
+    
+
+
 
 
 /* header section */
@@ -450,5 +484,4 @@ button {
     color: red;
     margin-top: 10px;
 }
-
 
