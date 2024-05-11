@@ -57,7 +57,7 @@ ul {
 }
 
 .container {
-    max-width: 1180px;
+    width:100%;
     margin-inline: auto;
     padding-inline: var(--padding-inline-section);
     overflow: hidden;
@@ -130,11 +130,10 @@ ul {
     margin-top: 40px;
     justify-content: space-between;
 
-    position: fixed;
+    margin-top: 0px;
     top: 0;
     width: 100%;
     padding: 10px 0;
-    margin-left: 50px;
 
     background-color: #ccc
 }
@@ -144,7 +143,7 @@ ul {
 
     visibility: visible;
 
-    padding: 20px;
+    padding: 10px;
 
 }
 
