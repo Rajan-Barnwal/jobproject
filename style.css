@@ -389,6 +389,7 @@ header {
 /* footer */
 
 footer {
+    position: fixed;
     padding-block: 80px;
     background-color: #ebf2fa;
 }
@@ -409,6 +410,11 @@ footer {
 .subfooter {
     background-color: #b9cde4;
     padding: var(--padding-inline-section);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
 }
 
 .subfooter-container {
