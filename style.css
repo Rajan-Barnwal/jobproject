@@ -75,6 +75,7 @@ ul {
 
 .hover-link:hover {
     color: var(--accent-color);
+  
 }
 
 .primary-button {
@@ -164,6 +165,7 @@ ul {
 }
 .nav-links a:hover{
     background-color: #ebf2fa;
+    
 
 
 .nav-links ul {
