@@ -330,6 +330,13 @@ footer {
     gap: 20px;
 }
 
+.newcl{
+    background-color: #b9cde4;
+    font-weight: 900;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+}
+
 .footer-container {
     align-items: flex-start;
     justify-content: space-between;
@@ -381,3 +388,4 @@ button {
     color: red;
     margin-top: 10px;
 }
+
