@@ -125,7 +125,15 @@ ul {
 }
 
 /* nav bar */
-
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #ccc;
+    z-index: 1000;
+}
 .main-nav {
     margin-top: 40px;
     justify-content: space-between;
