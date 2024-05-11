@@ -252,6 +252,12 @@ header {
 
 .logo {
     height: 46px;
+    cursor:pointer;
+    filter:grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+}
+.logo:hover{
+    filter: grayscale(0%);
 }
 
 /* features section */
