@@ -59,6 +59,7 @@ ul {
 .container {
     max-width: 1180px;
     margin-inline: auto;
+    /* background-color: red; */
     padding-inline: var(--padding-inline-section);
     overflow: hidden;
 }
@@ -90,7 +91,7 @@ ul {
 }
 
 .primary-button:hover {
-    background-color: var(--accent-color-dark);
+    background-color: var(--accent-color-dark) !important;
 }
 
 .secondary-button {
@@ -129,23 +130,14 @@ ul {
 .main-nav {
     margin-top: 40px;
     justify-content: space-between;
-
-    position: fixed;
-    top: 0;
     width: 100%;
-    padding: 10px 0;
-    margin-left: 50px;
-
-    background-color: #ccc
+    padding: 10px 20px;
+    margin-bottom: 3rem;
 }
 
 .company-logo img {
     width: 200px;
-
     visibility: visible;
-
-    padding: 20px;
-
 }
 
 .nav-links {
@@ -155,16 +147,17 @@ ul {
 .nav-links ul {
     justify-content: end;
     gap: 40px;
+    display: flex ;
+    gap: 10px;
 }
 .nav-links a{
     border: 1px transparent solid;
     border-radius: 2px;
     padding:4px;
-
 }
+
 .nav-links a:hover{
     background-color: #ebf2fa;
-
 
 .nav-links ul {
    list-style: none;
@@ -202,9 +195,9 @@ ul {
     .nav-toggle {
         display: block;
     }
-
     .nav-links.active {
         display: block;
+        
     }
 }
 
