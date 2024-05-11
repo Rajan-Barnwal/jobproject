@@ -61,6 +61,7 @@ ul {
     margin-inline: auto;
     padding-inline: var(--padding-inline-section);
     overflow: hidden;
+    border-radius: 6px;
 }
 
 .flex {
@@ -69,6 +70,7 @@ ul {
 }
 
 .hover-link {
+    
     color: var(--primary-text-color);
     transition: 0.2s ease-out;
 }
@@ -343,6 +345,7 @@ header {
     background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(asset\ 35.jpeg);
     background-size: cover;
     transition: 0.2s ease-out;
+    border-radius: 6px;
 }
 
 .examples-card:hover {
