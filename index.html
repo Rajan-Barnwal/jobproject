@@ -7,6 +7,8 @@
     <title>My Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media-queries.css">
+    <script src="script.js" ></script>
+
 </head>
 <body>
     
@@ -19,26 +21,31 @@
     </div>
 
     <!-- nav bar -->
-    <nav>
-        <div class="container main-nav flex">
-            <a href="#" class="company-logo">
-                <img src="./assets/asset 1.png" alt="company logo">
-            </a>
+<nav>
+    <div class="container main-nav flex">
+        <a href="#" class="company-logo">
+            <img src="./assets/asset 1.png" alt="company logo">
+        </a>
+        <div class="nav-links-wrapper"> <!-- Added wrapper -->
             <div class="nav-links" id="nav-links">
-                <ul class="flex">
-                    <li><a href="#" class="hover-link">Products</a></li>
-                    <li><a href="#" class="hover-link">Customer</a></li>
-                    <li><a href="#" class="hover-link">Pricing</a></li>
-                    <li><a href="#" class="hover-link">Resources</a></li>
+                <ul class="flex" id="nav-list">
+                    <li><a href="#" class="hover-link">Products\</a></li>
+                    <li><a href="#" class="hover-link">Customer\</a></li>
+                    <li><a href="#" class="hover-link">Pricing\</a></li>
+                    <li><a href="#" class="hover-link">Resources\</a></li>
                     <li><a href="signin.html" class="hover-link secondary-button">Sign in</a></li>
                     <li><a href="signup.html" class="hover-link primary-button">Sign up</a></li>
                 </ul>
             </div>
-            <a href="#" class="nav-toggle hover-link" id="nav-toggle">
-                <i class="fa-solid fa-bars"></i>
-            </a>
         </div>
-    </nav>
+    
+    <a href="#" class="nav-toggle hover-link" id="nav-toggle">
+        <i class="fa fa-bars"></i>
+    </a>
+        
+        
+    </div>
+</nav>
 
     <!-- header section -->
     <header>
