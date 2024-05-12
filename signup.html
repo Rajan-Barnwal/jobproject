@@ -6,19 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
 </head>
-<body>
-    <div class="containers">
+<body id="signup-page">
+    <div class="flex-container">
+      <div class="containers">
         <h2>Sign Up</h2>
         <form id="signUpForm">
-            <input type="text" id="signUpUsername" placeholder="Username" required>
-            <input type="email" id="signUpEmail" placeholder="Email" required>
-            <input type="password" id="signUpPassword" placeholder="Password" required>
-            <button type="submit">Sign Up</button>
+          <input type="text" id="signUpUsername" placeholder="Username" required>
+          <input type="email" id="signUpEmail" placeholder="Email" required>
+          <input type="password" id="signUpPassword" placeholder="Password" required>
+          <button type="submit">Sign Up</button>
         </form>
+        <p>Or</p>
+        <button id="googleSignIn">Sign Up with Google</button>
+  
         <p id="signUpError" class="error-message"></p>
         <p>Already have an account? <a href="signin.html">Sign In</a></p>
+      </div>
+     
     </div>
-    <script src="script.js"></script>
-</body>
+    <script src="dist/main.js"></script>
+  </body>
 </html>

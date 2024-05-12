@@ -19,6 +19,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     color: var(--primary-text-color);
+    
 }
 
 h1 {
@@ -55,14 +56,34 @@ ul {
     font-size: 1rem;
     font-weight: 700;
 }
+body#signup-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 0;
+    position: relative;
+  }
+  
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+  }
+  
 
-.container {
-    max-width: 1180px;
+  
+  .containers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
     margin-inline: auto;
     padding-inline: var(--padding-inline-section);
     overflow: hidden;
-}
-
+  }
 .flex {
     display: flex;
     align-items: center;
@@ -127,16 +148,16 @@ ul {
 /* nav bar */
 
 .main-nav {
-    margin-top: 40px;
+    display:flex;
+    margin-top: 0px;
     justify-content: space-between;
-
-    position: fixed;
+    /* position: fixed; */
     top: 0;
+    left: 0;
     width: 100%;
     padding: 10px 0;
-    margin-left: 50px;
-
-    background-color: #ccc
+    background-color: #ccc;
+    z-index: 100; 
 }
 
 .company-logo img {
@@ -150,6 +171,9 @@ ul {
 
 .nav-links {
     flex-basis: 730px;
+    display: flex;
+
+    justify-content: flex-start;
 }
 
 .nav-links ul {
@@ -195,15 +219,13 @@ ul {
 }
 
 @media screen and (max-width: 768px) {
-    .nav-links {
+    .nav-links,
+    .nav-links.active {
         display: none;
+        width: 100%; /* make the nav links responsive */
     }
 
     .nav-toggle {
-        display: block;
-    }
-
-    .nav-links.active {
         display: block;
     }
 }
