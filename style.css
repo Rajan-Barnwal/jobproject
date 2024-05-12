@@ -127,18 +127,18 @@ ul {
 /* nav bar */
 
 .main-nav {
-    margin-top: 40px;
+    margin-top: 10px;
     justify-content: space-between;
-
-    position: fixed;
     top: 0;
     width: 100%;
     padding: 10px 0;
-    margin-left: 50px;
-
+    margin-left: 100px;
     background-color: #ccc
 }
 
+.main-img {
+    margin-top: 30px;
+}
 .company-logo img {
     width: 200px;
 
@@ -450,5 +450,4 @@ button {
     color: red;
     margin-top: 10px;
 }
-
 
