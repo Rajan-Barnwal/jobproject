@@ -250,7 +250,10 @@ body#signup-page .containers,
 }
 
 .nav-links {
-    display: none;
+   
+    display: flex;
+
+    justify-content: flex-start;
 }
 
 .nav-toggle {
