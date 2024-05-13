@@ -7,6 +7,13 @@
     <title>My Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media-queries.css">
+ <!--=============== REMIXICONS ===============-->
+ <link
+ rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+/>
+<link rel="stylesheet" href="./navbar.css">
+
 </head>
 <body>
     
@@ -18,27 +25,88 @@
         </div>
     </div>
 
-    <!-- nav bar -->
-    <nav>
-        <div class="container main-nav flex">
-            <a href="#" class="company-logo">
-                <img src="./assets/asset 1.png" alt="company logo">
-            </a>
-            <div class="nav-links" id="nav-links">
-                <ul class="flex">
-                    <li><a href="#" class="hover-link">Products</a></li>
-                    <li><a href="#" class="hover-link">Customer</a></li>
-                    <li><a href="#" class="hover-link">Pricing</a></li>
-                    <li><a href="#" class="hover-link">Resources</a></li>
-                    <li><a href="signin.html" class="hover-link secondary-button">Sign in</a></li>
-                    <li><a href="signup.html" class="hover-link primary-button">Sign up</a></li>
-                </ul>
-            </div>
-            <a href="#" class="nav-toggle hover-link" id="nav-toggle">
-                <i class="fa-solid fa-bars"></i>
-            </a>
+
+<navbar class="navbar">
+    <nav class="nav nav__container">
+        <a href="#" class="nav__logo company-logo">
+            <img src="./assets/asset 1.png" alt="company logo">
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+           <ul class="nav__list">
+              <li class="nav__item">
+                 <a href="#" class="nav__link">
+                    <i class="ri-arrow-right-up-line"></i>
+                    <span>Products</span>
+                 </a>
+              </li>
+
+              <li class="nav__item">
+                 <a href="#" class="nav__link">
+                    <i class="ri-arrow-right-up-line"></i>
+                    <span>Customer</span>
+                 </a>
+              </li>
+
+              <li class="nav__item">
+                 <a href="#" class="nav__link">
+                    <i class="ri-arrow-right-up-line"></i>
+                    <span>Pricing</span>
+                 </a>
+              </li>
+
+              <li class="nav__item">
+                 <a href="#" class="nav__link">
+                    <i class="ri-arrow-right-up-line"></i>
+                    <span>Resources</span>
+                 </a>
+              </li>
+
+              <li class="nav__item sign__button">
+                 <a href="signin.html" class="nav__link">
+                    Sign In
+                 </a>
+              </li>
+
+              <li class="nav__item sign__button">
+                <a href="signup.html" class="nav__link">
+                   Sign Up
+                </a>
+             </li>
+           </ul>
+
+           <!-- Close button -->
+           <div class="nav__close" id="nav-close">
+              <i class="ri-close-large-line"></i>
+           </div>
+
+           <div class="nav__social">
+              <a href="https://www.instagram.com/" target="_blank" class="nav__social-link">
+                 <i class="ri-instagram-line"></i>
+              </a>
+
+              <a href="https://github.com/" target="_blank" class="nav__social-link">
+                 <i class="ri-github-line"></i>
+              </a>
+
+              <a href="https://dribbble.com/" target="_blank" class="nav__social-link">
+                 <i class="ri-dribbble-line"></i>
+              </a>
+
+              <a href="https://www.linkedin.com/" target="_blank" class="nav__social-link">
+                 <i class="ri-linkedin-box-line"></i>
+              </a>
+           </div>
         </div>
-    </nav>
+
+        <!-- Toggle button -->
+        <div class="nav__toggle" id="nav-toggle">
+           <i class="ri-menu-line"></i>
+        </div>
+     </nav>
+</navbar>
+
+
 
     <!-- header section -->
     <header>
@@ -244,15 +312,7 @@
 
     <script src="https://kit.fontawesome.com/c1fc3d2826.js" crossorigin="anonymous"></script>
 
-    <script>
-        const toggleButton = document.getElementById('nav-toggle');
-        const navLinks = document.getElementById('nav-links');
-
-        toggleButton.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        })
-
-    </script>
+<script src="./script.js"></script>
 
 </body>
 </html>
