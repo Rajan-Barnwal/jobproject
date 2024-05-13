@@ -1,0 +1,3 @@
+[submodule "jobproject"]
+	path = jobproject
+	url = https://github.com/kesharwaniyanshi/jobproject.git
