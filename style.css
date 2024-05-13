@@ -66,6 +66,7 @@ ul {
 .flex {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
 }
 
 .hover-link {
@@ -86,7 +87,7 @@ ul {
     box-shadow: 0 0 2px var(--secondary-text-color);
     transition: 0.2s ease-out;
     text-align: center;
-    margin-top:6px;
+    margin-top: 6px;
 }
 
 .primary-button:hover {
@@ -100,7 +101,7 @@ ul {
     color: var(--primary-text-color) !important;
     padding: 5px 40px;
     transition: 0.2s ease-out;
-    margin-top:6px;
+    margin-top: 6px;
 }
 
 .secondary-button:hover {
@@ -113,6 +114,12 @@ ul {
 /* top banner */
 
 .top-banner {
+   
+
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1000; 
     background-image: url('asset\ 30.png');
     background-color: #4fb3d4;
     background-size: 300px;
@@ -127,16 +134,15 @@ ul {
 /* nav bar */
 
 .main-nav {
-    margin-top: 40px;
-    justify-content: space-between;
-
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 10px 0;
-    margin-left: 50px;
-
-    background-color: #ccc
+    
+    max-width: 1550px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    width: 100vw;
+    padding: 50px 0 0 0;
+    background-color: #ccc;
+    position: relative; 
+    z-index: 999;
 }
 
 .company-logo img {
@@ -156,36 +162,38 @@ ul {
     justify-content: end;
     gap: 40px;
 }
-.nav-links a{
+
+.nav-links a {
     border: 1px transparent solid;
     border-radius: 2px;
-    padding:4px;
+    padding: 4px;
 
 }
-.nav-links a:hover{
+
+.nav-links a:hover {
     background-color: #ebf2fa;
 
 
-.nav-links ul {
-   list-style: none;
-   padding: 0;
-   margin: 0;
-}
+    .nav-links ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
 
-.nav-links ul li {
-    display: inline;
-    margin-right: 20px;
-    white-space: nowrap;
-}
+    .nav-links ul li {
+        display: inline;
+        margin-right: 20px;
+        white-space: nowrap;
+    }
 
-.nav-links ul li:last-child {
-    margin-right: 0;
-}
+    .nav-links ul li:last-child {
+        margin-right: 0;
+    }
 
-.nav-links a {
-    text-decoration: none;
-    color: black
-}
+    .nav-links a {
+        text-decoration: none;
+        color: black
+    }
 
 
 }
@@ -285,7 +293,8 @@ header {
     max-width: 30%;
     text-align: center;
 }
-.features-card:hover{
+
+.features-card:hover {
     transform: scale(1.02);
     transition: 0.3s ease-in-out;
 }
@@ -416,6 +425,7 @@ footer {
     gap: 30px;
     flex-wrap: wrap;
 }
+
 .containers {
     max-width: 400px;
     /* margin: 0; */
@@ -450,5 +460,3 @@ button {
     color: red;
     margin-top: 10px;
 }
-
-
