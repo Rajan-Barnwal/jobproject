@@ -57,6 +57,7 @@ ul {
     font-weight: 700;
 }
 body#signup-page {
+    background-color: #f0bd90; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,6 +76,7 @@ body#signup-page {
 
   
   .containers {
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,6 +90,39 @@ body#signup-page {
     display: flex;
     align-items: center;
 }
+#signinPage {
+    background-color: #f0bd90; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 0;
+}
+
+#signinPage .containers {
+    background-color: white; 
+    padding: 150px;
+    width: 70%; 
+    max-width: 600px;
+   
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+
+
+
+
+body#signup-page .containers,
+#signinPage .containers {
+    max-width: 90%; /* Adjust maximum width as needed */
+    margin-top: 30%; /* Adjust margin top as needed */
+    padding: 50px; /* Adjust padding as needed */
+    
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add box shadow as needed */
+}
+
 
 .hover-link {
     color: var(--primary-text-color);
@@ -214,21 +249,33 @@ body#signup-page {
 
 }
 
+.nav-links {
+    display: none;
+}
+
 .nav-toggle {
     display: none;
 }
 
 @media screen and (max-width: 768px) {
-    .nav-links,
     .nav-links.active {
-        display: none;
-        width: 100%; /* make the nav links responsive */
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #ccc;
+        padding: 20px;
     }
 
     .nav-toggle {
         display: block;
+        cursor: pointer;
     }
 }
+
 
 
 /* header section */
@@ -439,15 +486,14 @@ footer {
     flex-wrap: wrap;
 }
 .containers {
-    max-width: 400px;
-    /* margin: 0; */
-    margin-top: 20%;
-    margin-left: 35%;
+    max-width: 400px; /* Adjust maximum width as needed */
+    margin: 0 auto; /* Center the container horizontally */
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     text-align: center;
 }
+
 
 input[type="text"],
 input[type="email"],
