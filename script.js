@@ -1,48 +1,41 @@
-document.addEventListener("DOMContentLoaded", (event) => {
-  const firebaseConfig = {
-    // Firebase configuration object
-    apiKey: "AIzaSyA4Q2kYoKmJMG-lGLF0OX11vRndf-0FcTU",
 
-    authDomain: "usablityhub.firebaseapp.com",
+const firebaseConfig = {
+  apiKey: "AIzaSyA4Q2kYoKmJMG-lGLF0OX11vRndf-0FcTU",
+  authDomain: "usablityhub.firebaseapp.com",
+  projectId: "usablityhub",
+  storageBucket: "usablityhub.appspot.com",
+  messagingSenderId: "629979190207",
+  appId: "1:629979190207:web:47dbbb9ad0ee89cead870a",
+  measurementId: "G-7FX2TL0S3C"
+};
+const app = firebase.initializeApp(firebaseConfig);
+const analytics = firebase.analytics(app);
 
-    projectId: "usablityhub",
+const googleSignInButton = document.getElementById('googleSignIn');
+googleSignInButton.addEventListener('click', async () => {
+  
+  const provider = new firebase.auth.GoogleAuthProvider();
 
-    storageBucket: "usablityhub.appspot.com",
+  try {
 
-    messagingSenderId: "629979190207",
+    const result = await firebase.auth().signInWithPopup(provider);
 
-    appId: "1:629979190207:web:47dbbb9ad0ee89cead870a",
+    const token = result.credential.accessToken;
 
-    measurementId: "G-7FX2TL0S3C",
-  };
+    const user = result.user;
 
-  // Initialize Firebase
-  const app = firebase.initializeApp(firebaseConfig);
+    window.location.href = 'portal.html'; 
+  } catch (error) {
+  
+    const errorCode = error.code;
+    const errorMessage = error.message;
 
-  // Get the sign-in button element
-  const signInButton = document.getElementById("googleSignIn");
+    const email = error.email;
 
-  // Add a click event listener to the sign-in button
-  signInButton.addEventListener("click", () => {
-    const provider = new firebase.auth.GoogleAuthProvider();
-    firebase
-      .auth()
-      .signInWithPopup(provider)
-      .then((userCredential) => {
-        var user = userCredential.user;
-        console.log(user);
-        window.location.href = "signin.html";
-      })
-      .catch((error) => {
-        var errorCode = error.code;
-        var errorMessage = error.message;
-        if (errorCode === "auth/popup-closed-by-user") {
-          console.error(
-            "The sign-in popup was closed by the user before finalizing the operation."
-          );
-        } else {
-          console.error(errorCode, errorMessage);
-        }
-      });
-  });
+  
+    const credential = error.credential;
+
+   
+    alert(errorMessage);
+  }
 });

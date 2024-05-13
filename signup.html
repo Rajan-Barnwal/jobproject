@@ -7,8 +7,6 @@
     <title>Sign Up</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="assets/favicon.png">
-    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
 </head>
 <body id="signup-page">
     <div class="flex-container">
@@ -21,13 +19,16 @@
           <button type="submit">Sign Up</button>
         </form>
         <p>Or</p>
-        <button id="googleSignIn">Sign Up with Google</button>
+      
+        <button id="googleSignIn">Sign in with Google</button>
   
         <p id="signUpError" class="error-message"></p>
         <p>Already have an account? <a href="signin.html">Sign In</a></p>
       </div>
-     
     </div>
-    <script src="dist/main.js"></script>
-  </body>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+<script src="script.js"></script>
+</body>
 </html>
