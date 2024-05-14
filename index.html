@@ -25,7 +25,7 @@
                 <img src="./assets/asset 1.png" alt="company logo">
             </a>
             <div class="nav-links" id="nav-links">
-                <ul class="flex">
+                <ul class="flex navabar-tabs">
                     <li><a href="#" class="hover-link">Products</a></li>
                     <li><a href="#" class="hover-link">Customer</a></li>
                     <li><a href="#" class="hover-link">Pricing</a></li>
@@ -247,10 +247,28 @@
     <script>
         const toggleButton = document.getElementById('nav-toggle');
         const navLinks = document.getElementById('nav-links');
+        // const navbartabs = document.getElementById('navbar-tabs');
+        // console.log(navbartabs);
+        
 
         toggleButton.addEventListener('click', () => {
+            navLinks.style.width = '100vw';
             navLinks.classList.toggle('active');
-        })
+        });
+
+        window.addEventListener('scroll',function() {
+            var topBanner = document.querySelector('.top-banner');
+            var topBannerH = topBanner.offsetHeight;
+            var navBar = document.querySelector('.main-nav');
+
+            if(window.scrollY >= topBannerH){
+                console.log('should move to the top');
+                navBar.classList.add('main-nav-sticky');
+            }
+            else{
+                navBar.classList.remove('main-nav-sticky');
+            }
+        });
 
     </script>
 
