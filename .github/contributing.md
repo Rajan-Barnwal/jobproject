@@ -5,8 +5,8 @@
 ### Contents
 
 - [Code of Conduct](#book-code-of-conduct)
-- [Asking Questions](#bulb-asking-questions)
-- [Opening an Issue](#inbox_tray-opening-an-issue)
+- [Asking Questions](#bulk-asking-questions)
+- [Opening an Issue](#inbox_try-opening-an-issue)
 - [Feature Requests](#love_letter-feature-requests)
 - [Triaging Issues](#mag-triaging-issues)
 - [Submitting Pull Requests](#repeat-submitting-pull-requests)
