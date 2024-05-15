@@ -1,5 +1,5 @@
 ---
-### Welcome to Job-Portal Documentation! 🌟🌻✨
+### Welcome to Job-Portal! 🌟🌻✨
 
 
 ---
