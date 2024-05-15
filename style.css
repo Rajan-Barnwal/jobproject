@@ -115,7 +115,8 @@ ul {
 .top-banner {
     background-image: url('asset\ 30.png');
     background-color: #4fb3d4;
-    background-size: 300px;
+    /* background-size: 300px; */
+    background-size: cover;
 }
 
 .banner-text {
@@ -126,16 +127,14 @@ ul {
 
 /* nav bar */
 
-.main-nav {
-    margin-top: 40px;
+nav {
+    /* margin-top: 40px; */
     justify-content: space-between;
-
-    position: fixed;
+    position: sticky;
     top: 0;
-    width: 100%;
-    padding: 10px 0;
-    margin-left: 50px;
-
+    /* width: 100%; */
+    padding: 3px 0;
+    /* margin-left: 50px; */
     background-color: #ccc
 }
 
