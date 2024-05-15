@@ -1,5 +1,5 @@
 ---
-### Welcome to Job-Portal Documentation! 🌟 
+### Welcome to Job-Portal Documentation! 🌟🌻✨
 
 
 ---
@@ -28,7 +28,7 @@ Welcome to our Job Portal Project! Our platform is designed to provide a seamles
    6. **User Profiles:** 
       - Both job seekers and employers have personalized profiles where they can manage their information, including resumes, job preferences, and company details. 👤
 
-   7. **Notifications:** 
+   7. **Notifications:** 🔔
       - Users receive timely notifications for important events such as new job listings, application status updates, and messages from employers. 🔔
 
 ---
@@ -41,31 +41,31 @@ Contributions are always welcome! Here's how you can contribute to our project:
     - Fork this repository to your GitHub account. 🍴
 
  2. **Clone the Repository:**
-    - Clone your forked copy of the project to your local machine using the following command:
+    - Clone your forked copy of the project to your local machine using the following command:📎
       ```
       git clone https://github.com/your-username/jobproject.git
       ```
 
  3. **Add Remote Reference:**
-    - Add a reference to the original repository by executing the following command:
+    - Add a reference to the original repository by executing the following command:📎
       ```
       git remote add upstream https://github.com/your-username/jobproject.git
       ```
 
  4. **Check Remotes:**
-    - Verify the remotes for this repository with the following command:
+    - Verify the remotes for this repository with the following command:📎
       ```
       git remote -v
       ```
 
  5. **Keep Your Repository Up-to-Date:**
-    - Ensure your main branch is up-to-date with the main repository by pulling from upstream:
+    - Ensure your main branch is up-to-date with the main repository by pulling from upstream:📎
       ```
       git pull upstream main
       ```
 
  6. **Create a New Branch:**
-    - Create a new branch to work on your feature or bug fix:
+    - Create a new branch to work on your feature or bug fix:📎
       ```
       git checkout -b <your_branch_name>
       ```
@@ -74,19 +74,19 @@ Contributions are always welcome! Here's how you can contribute to our project:
     - Let your creativity flow and implement your desired changes to the code base. 🎨
 
  8. **Track Changes:**
-    - Add the changes to the staging area:
+    - Add the changes to the staging area:📎
       ```
       git add .
       ```
 
  9. **Commit Changes:**
-    - Commit your changes with a relevant commit message:
+    - Commit your changes with a relevant commit message:📎
       ```
       git commit -m "Showcasing my amazing enhancements!"
       ```
 
  10. **Push Changes to Your Remote Repository:**
-     - Push the committed changes in your feature branch to your remote repository:
+     - Push the committed changes in your feature branch to your remote repository:📎
        ```
        git push -u origin <your_branch_name>
        ```
@@ -96,7 +96,7 @@ Contributions are always welcome! Here's how you can contribute to our project:
 
 ---
 
-**Feedback:**
+**Feedback:** 💭🗣️💌
 
 We thrive on your feedback! If you encounter any issues, have suggestions for improvements, or want to contribute ideas for new features, please don't hesitate to open an issue on the project's GitHub repository or reach out to us directly.
 
