@@ -149,7 +149,9 @@ ul {
 }
 
 .nav-links {
-    flex-basis: 730px;
+    flex-basis: 1000px;
+
+    
 }
 
 .nav-links ul {
@@ -163,7 +165,9 @@ ul {
 
 }
 .nav-links a:hover{
-    background-color: #ebf2fa;
+    background-color: #4a4c4f;
+   
+
 
 
 .nav-links ul {
@@ -173,7 +177,7 @@ ul {
 }
 
 .nav-links ul li {
-    display: inline;
+    display: inline-flex;
     margin-right: 20px;
     white-space: nowrap;
 }
