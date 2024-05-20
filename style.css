@@ -9,28 +9,45 @@
 }
 
 :root {
-    --primary-text-color: #183b56;
-    --secondary-text-color: #577592;
+    --primary-text-color: #fff;
+    --secondary-text-color: #000;
     --accent-color: #2294ed;
     --accent-color-dark: #1d69a3;
     --padding-inline-section: 20px;
 }
+.dark-theme{
+    --primary-text-color:#000;
+    --secondary-text-color:#fff;
+    --accent-color: #1d69a3;
+    --accent-color-dark: #2294ed;
+}
 
 body {
     font-family: 'Poppins', sans-serif;
-    color: var(--primary-text-color);
+    background: var(--primary-text-color);
+}
+
+
+#icon{
+    width: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
 }
 
 h1 {
     font-size: 3rem;
+    color: var(--secondary-text-color);
 }
 
 h2 {
     font-size: 2rem;
+    color:var(--secondary-text-color);
 }
 
 h3 {
     font-size: 1.5rem;
+    color:var(--secondary-text-color);
 }
 
 p {
@@ -81,7 +98,7 @@ ul {
     background-color: var(--accent-color);
     border-radius: 6px;
     font-weight: 700;
-    color: white !important;
+    color: var(--primary-text-color) !important;
     padding: 5px 40px;
     box-shadow: 0 0 2px var(--secondary-text-color);
     transition: 0.2s ease-out;
@@ -97,7 +114,7 @@ ul {
     border: 0.5px solid var(--secondary-text-color);
     border-radius: 6px;
     font-weight: 700;
-    color: var(--primary-text-color) !important;
+    color: var(--secondary-text-color) !important;
     padding: 5px 40px;
     transition: 0.2s ease-out;
     margin-top:6px;
@@ -119,7 +136,7 @@ ul {
 }
 
 .banner-text {
-    color: white;
+    color: var(--primary-text-color);
     padding: 15px 30px;
     text-align: center;
 }
@@ -192,7 +209,7 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: black
+    color: var(--secondary-text-color);
 }
 
 
@@ -249,7 +266,7 @@ header {
 .companies-header {
     text-align: center;
     margin-block: 30px;
-    color: var(--primary-text-color);
+    color: var(--secondary-text-color);
 }
 
 .logos {
@@ -260,6 +277,13 @@ header {
 
 .logo {
     height: 46px;
+}
+.logo1{
+    background-color: white;
+    height: 46px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 /* features section */
@@ -347,7 +371,7 @@ header {
     width: 23%;
     position: relative;
     height: 300px;
-    background: black;
+    background: var(--secondary-text-color);
     background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(asset\ 35.jpeg);
     background-size: cover;
     transition: 0.2s ease-out;
@@ -372,7 +396,7 @@ header {
     bottom: 20px;
     left: 20px;
     right: 20px;
-    color: white;
+    color: var(--secondary-text-color);
 }
 
 /* cta section */
@@ -380,7 +404,7 @@ header {
 .cta-section-container {
     flex-direction: column;
     gap: 30px;
-    color: white;
+    color: var(--primary-text-color);
     text-align: center;
 }
 
@@ -390,7 +414,7 @@ header {
 }
 
 .cta-section-container p {
-    color: white;
+    color: var(--primary-color);
     margin-top: 20px;
 }
 
