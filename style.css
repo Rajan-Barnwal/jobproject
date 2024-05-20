@@ -436,11 +436,14 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
+    min-width: 200px;
 }
 
 .footer-container {
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 /* subfooter */
