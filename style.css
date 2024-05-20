@@ -313,8 +313,8 @@ header {
 
 .features-area {
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: space-evenly;
+    gap: 30px;
     margin-top: 20px;
 }
 
@@ -322,6 +322,7 @@ header {
     flex-direction: column;
     gap: 20px;
     max-width: 30%;
+    min-width: 250px;
     text-align: center;
 }
 .features-card:hover{
