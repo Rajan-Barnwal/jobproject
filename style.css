@@ -277,6 +277,13 @@ header {
 
 .logo {
     height: 46px;
+    filter: grayscale(100%);
+    opacity: 0.75;
+}
+.logo:hover{
+    filter: grayscale(0%);
+    opacity: 1;
+    cursor: pointer;
 }
 .logo1{
     background-color: white;
