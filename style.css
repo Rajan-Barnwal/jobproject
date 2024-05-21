@@ -17,7 +17,6 @@
 }
 .dark-theme{
     --primary-text-color:#000;
-    --secondary-text-color:#fff;
     --accent-color: #1d69a3;
     --accent-color-dark: #2294ed;
 }
@@ -25,6 +24,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background: var(--primary-text-color);
+    background-color: #ebf2fa;
 }
 
 
@@ -148,7 +148,7 @@ nav {
     left: 0;
     width: 100%;
     padding: 10px 0;
-    background-color: #ccc;
+    background-color: red;
     z-index: 1000;
 }
 .main-nav {
@@ -161,7 +161,7 @@ nav {
     padding: 10px 0;
     margin-left: 50px;
 
-    background-color: #ccc
+    background-color: #ccc;
 }
 
 .company-logo img {
@@ -489,5 +489,3 @@ button {
     color: red;
     margin-top: 10px;
 }
-
-
