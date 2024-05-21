@@ -66,6 +66,7 @@ ul {
     list-style: none;
 }
 
+
 /* utility classes */
 
 .small-bold-text {
@@ -103,7 +104,7 @@ ul {
     box-shadow: 0 0 2px var(--secondary-text-color);
     transition: 0.2s ease-out;
     text-align: center;
-    margin-top:6px;
+    margin-top: 6px;
 }
 
 .primary-button:hover {
@@ -117,7 +118,7 @@ ul {
     color: var(--secondary-text-color) !important;
     padding: 5px 40px;
     transition: 0.2s ease-out;
-    margin-top:6px;
+    margin-top: 6px;
 }
 
 .secondary-button:hover {
@@ -126,6 +127,7 @@ ul {
     transform: scale(1.02);
     transition: 0.3s ease-in-out;
 }
+
 
 /* top banner */
 
@@ -141,6 +143,7 @@ ul {
     text-align: center;
 }
 
+
 /* nav bar */
 nav {
     position: fixed;
@@ -154,23 +157,18 @@ nav {
 .main-nav {
     margin-top: 40px;
     justify-content: space-between;
-
     position: fixed;
     top: 0;
     width: 100%;
     padding: 10px 0;
     margin-left: 50px;
-
     background-color: #ccc
 }
 
 .company-logo img {
     width: 200px;
-
     visibility: visible;
-
     padding: 20px;
-
 }
 
 .nav-links {
@@ -181,38 +179,36 @@ nav {
     justify-content: end;
     gap: 40px;
 }
-.nav-links a{
-    border: 1px transparent solid;
-    border-radius: 2px;
-    padding:4px;
-
-}
-.nav-links a:hover{
-    background-color: #ebf2fa;
-
-
-.nav-links ul {
-   list-style: none;
-   padding: 0;
-   margin: 0;
-}
-
-.nav-links ul li {
-    display: inline;
-    margin-right: 20px;
-    white-space: nowrap;
-}
-
-.nav-links ul li:last-child {
-    margin-right: 0;
-}
 
 .nav-links a {
+
+    border: 1px transparent solid;
+    border-radius: 2px;
+    padding: 4px;
+
     text-decoration: none;
     color: var(--secondary-text-color);
 }
 
-
+.nav-links a:hover {
+    background-color: #ebf2fa;
+    .nav-links ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .nav-links ul li {
+        display: inline;
+        margin-right: 20px;
+        white-space: nowrap;
+    }
+    .nav-links ul li:last-child {
+        margin-right: 0;
+    }
+    .nav-links a {
+        text-decoration: none;
+        color: black
+    }
 }
 
 .nav-toggle {
@@ -223,11 +219,9 @@ nav {
     .nav-links {
         display: none;
     }
-
     .nav-toggle {
         display: block;
     }
-
     .nav-links.active {
         display: block;
     }
@@ -261,6 +255,7 @@ header {
     width: 100%;
 }
 
+
 /* companies section */
 
 .companies-header {
@@ -273,6 +268,11 @@ header {
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 20px;
+}
+
+.logos :hover {
+    transform: scale(1.20);
+    transition: 0.7s ease-in-out;
 }
 
 .logo {
@@ -292,6 +292,7 @@ header {
     flex-wrap: wrap;
     gap: 20px;
 }
+
 
 /* features section */
 
@@ -324,7 +325,8 @@ header {
     max-width: 30%;
     text-align: center;
 }
-.features-card:hover{
+
+.features-card:hover {
     transform: scale(1.02);
     transition: 0.3s ease-in-out;
 }
@@ -332,6 +334,7 @@ header {
 .features-card img {
     width: 60px;
 }
+
 
 /* big feature section */
 
@@ -355,6 +358,7 @@ header {
     flex-direction: column;
     align-items: flex-start;
 }
+
 
 /* examples section */
 
@@ -406,6 +410,7 @@ header {
     color: var(--secondary-text-color);
 }
 
+
 /* cta section */
 
 .cta-section-container {
@@ -425,6 +430,7 @@ header {
     margin-top: 20px;
 }
 
+
 /* footer */
 
 footer {
@@ -443,6 +449,7 @@ footer {
     justify-content: space-between;
 }
 
+
 /* subfooter */
 
 .subfooter {
@@ -455,6 +462,7 @@ footer {
     gap: 30px;
     flex-wrap: wrap;
 }
+
 .containers {
     max-width: 400px;
     /* margin: 0; */
@@ -489,5 +497,3 @@ button {
     color: red;
     margin-top: 10px;
 }
-
-
