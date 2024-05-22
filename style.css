@@ -164,13 +164,13 @@ nav {
 .main-nav {
     margin-top: 40px;
     justify-content: space-between;
-
+    max-width: -webkit-fill-available;
     position: fixed;
     top: 0;
     width: 100%;
     padding: 10px 0;
-    margin-left: 50px;
-
+    margin-left: 30px;
+    margin-right: 30px;
     background-color: #1f1d1d
 }
 
