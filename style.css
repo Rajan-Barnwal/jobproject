@@ -330,9 +330,10 @@ header {
 }
 
 .features-card {
+    margin-bottom: 12px;
     flex-direction: column;
     gap: 20px;
-    max-width: 30%;
+    max-width: 32%;
     text-align: center;
 }
 .features-card:hover{
@@ -383,30 +384,22 @@ header {
     justify-content: space-between;
     margin-block: 30px;
     flex-wrap: wrap;
+    
 }
 
 .examples-card {
     width: 23%;
     position: relative;
     height: 300px;
-    background: var(--secondary-text-color);
-    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(asset\ 35.jpeg);
-    background-size: cover;
+    border-radius: 10px; /* added border radius */
     transition: 0.2s ease-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* added box shadow */
+    
 }
 
 .examples-card:hover {
-    box-shadow: 0 0 10px #888;
-}
-
-.examples-card:nth-child(3) {
-    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(asset\ 36.jpeg);
-    background-size: cover;
-}
-
-.examples-card:nth-child(4) {
-    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(asset\ 37.jpeg);
-    background-size: cover;
+    transform: translateY(-5px); /* added hover effect */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .card-text {
@@ -414,7 +407,19 @@ header {
     bottom: 20px;
     left: 20px;
     right: 20px;
-    color: var(--secondary-text-color);
+    color: #607584;
+    /* color: var(--secondary-text-color); */
+}
+
+@media (max-width: 768px) {
+    .examples-card {
+        width: calc(50% - 20px);
+    }
+}
+@media (max-width: 480px) {
+    .examples-card {
+        width: 100%;
+    }
 }
 
 /* cta section */
