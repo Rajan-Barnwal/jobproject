@@ -27,14 +27,6 @@ body {
     background-color: #ebf2fa;
 }
 
-
-#icon{
-    width: 30px;
-    cursor: pointer;
-    display: flex;
-    justify-content: flex-end;
-}
-
 h1 {
     font-size: 3rem;
     color: var(--secondary-text-color);
@@ -94,38 +86,6 @@ ul {
     color: var(--accent-color);
 }
 
-.primary-button {
-    background-color: var(--accent-color);
-    border-radius: 6px;
-    font-weight: 700;
-    color: var(--primary-text-color) !important;
-    padding: 5px 40px;
-    box-shadow: 0 0 2px var(--secondary-text-color);
-    transition: 0.2s ease-out;
-    text-align: center;
-    margin-top:6px;
-}
-
-.primary-button:hover {
-    background-color: var(--accent-color-dark);
-}
-
-.secondary-button {
-    border: 0.5px solid var(--secondary-text-color);
-    border-radius: 6px;
-    font-weight: 700;
-    color: var(--secondary-text-color) !important;
-    padding: 5px 40px;
-    transition: 0.2s ease-out;
-    margin-top:6px;
-}
-
-.secondary-button:hover {
-    border-color: var(--accent-color);
-    color: var(--accent-color) !important;
-    transform: scale(1.02);
-    transition: 0.3s ease-in-out;
-}
 
 /* top banner */
 
@@ -148,7 +108,7 @@ nav {
     left: 0;
     width: 100%;
     padding: 10px 0;
-    background-color: red;
+    background-color: rgb(85, 85, 218);
     z-index: 1000;
 }
 .main-nav {
@@ -180,27 +140,31 @@ nav {
 .nav-links ul {
     justify-content: end;
     gap: 40px;
+    margin-top: 13px;
 }
 .nav-links a{
     border: 1px transparent solid;
     border-radius: 2px;
     padding:4px;
+    text-decoration: none;
 
 }
 .nav-links a:hover{
-    background-color: #ebf2fa;
+    background-color: greenyellow;
 
 
 .nav-links ul {
    list-style: none;
    padding: 0;
    margin: 0;
+   background-color: #1d69a3;
 }
 
 .nav-links ul li {
     display: inline;
     margin-right: 20px;
     white-space: nowrap;
+    color: red;
 }
 
 .nav-links ul li:last-child {
@@ -209,7 +173,7 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: var(--secondary-text-color);
+    color: black;
 }
 
 
