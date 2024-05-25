@@ -12,7 +12,7 @@
     
     <!-- top banner -->
 
-    <div class="top-banner">
+    <div class="top-banner hidden" >
         <div class="container">
             <div class="small-bold-text banner-text">🥳 New to Usability Hub: Open and Closed card sorting</div>
         </div>
@@ -20,7 +20,7 @@
 
     <!-- nav bar -->
     <nav>
-        <div class="container main-nav flex">
+        <div class="container main-nav flex hidden">
             <a href="#" class="company-logo">
                 <img src="./assets/asset 1.png" alt="company logo">
             </a>
@@ -41,7 +41,7 @@
     </nav>
 
     <!-- header section -->
-    <header>
+    <header class="hidden">
         <div class="container header-section flex">
             <div class="header-left">
                 <h1>Design Confidently</h1>
@@ -56,7 +56,7 @@
 
     <!-- companies section -->
 
-    <section class="companies-section">
+    <section class="companies-section hidden">
         <div class="container">
             <div class="small-bold-text companies-header">The world’s best companies rely on UsabilityHub to make better design decisions.</div>
             <div class="logos flex">
@@ -73,7 +73,7 @@
 
     <!-- features section -->
 
-    <section class="features-section">
+    <section class="features-section hidden">
         <div class="container">
             <div class="features-header">
                 <h2 class="features-heading-text">Your user research Swiss Army knife</h2>
@@ -122,7 +122,7 @@
 
     <!-- big features section -->
 
-    <section class="big-feature-section">
+    <section class="big-feature-section hidden">
         <div class="container flex big-feature-container">
             <div class="feature-img">
                 <img src="./assets/asset 18.png" alt="">
@@ -135,7 +135,7 @@
         </div>
     </section>
     
-    <section class="big-feature-section">
+    <section class="big-feature-section hidden">
         <div class="container flex big-feature-container" id="second-big-feature">
             <div class="feature-img">
                 <img src="./assets/asset 21.png" alt="">
@@ -148,7 +148,7 @@
         </div>
     </section>
 
-    <section class="big-feature-section">
+    <section class="big-feature-section hidden">
         <div class="container flex big-feature-container">
             <div class="feature-img">
                 <img src="./assets/asset 24.png" alt="">
@@ -163,7 +163,7 @@
 
     <!-- examples section -->
 
-    <section class="examples-section">
+    <section class="examples-section hidden">
         <div class="container">
             <div class="examples-header flex">
                 <h2 class="examples-heading-text">One platform, endless possibilities</h2>
@@ -188,7 +188,7 @@
 
     <!-- cta section -->
 
-    <section class="cta-section">
+    <section class="cta-section hidden">
         <div class="container flex cta-section-container">
             <h2>Start testing today</h2>
             <p>Take the guesswork out of design decisions</p>
@@ -199,7 +199,7 @@
     <!-- footer -->
 
     <footer>
-        <div class="container flex footer-container">
+        <div class="container flex footer-container hidden">
             <a href="#" class="company-logo">
                 <img src="./assets/asset 1.png" alt="company logo">
             </a>
@@ -232,7 +232,7 @@
 
     <!-- subfooter -->
 
-    <div class="subfooter">
+    <div class="subfooter hidden">
         <div class="container flex subfooter-container">
             <a class="hover-link" href="#">Privacy policy</a>
             <a class="hover-link" href="#">Terms & Condition</a>
@@ -251,6 +251,50 @@
         toggleButton.addEventListener('click', () => {
             navLinks.classList.toggle('active');
         })
+       
+        
+    document.addEventListener('DOMContentLoaded', () => {
+        const elements = document.querySelectorAll('.top-banner, .main-nav, .header-section, .companies-section, .features-section, .big-feature-section, .examples-section, .cta-section, .footer-container, .subfooter-container');
+
+        // Helper function to determine the initial transform direction
+        const getInitialTransform = (index) => {
+            return index % 2 === 0 ? 'translateX(-100px)' : 'translateX(100px)';
+        };
+
+        elements.forEach((el, index) => {
+            // Set initial hidden state with horizontal translation
+            el.style.opacity = '0';
+            el.style.transform = getInitialTransform(index);
+            el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+        });
+
+        const isInViewport = (el) => {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.bottom >= 0
+            );
+        };
+
+        const checkElementsInView = () => {
+            elements.forEach((el) => {
+                if (isInViewport(el)) {
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateX(0)';
+                } else {
+                    el.style.opacity = '0';
+                    el.style.transform = getInitialTransform([...elements].indexOf(el));
+                }
+            });
+        };
+
+        // Initial check when page loads
+        checkElementsInView();
+
+        // Check again when the user scrolls
+        window.addEventListener('scroll', checkElementsInView);
+    });
+
 
     </script>
 
