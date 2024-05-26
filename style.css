@@ -29,7 +29,8 @@ body {
 
 h1 {
     font-size: 3rem;
-    color: var(--secondary-text-color);
+    color: rgb(89, 86, 182);
+    font-style: italic;
 }
 
 h2 {
@@ -393,7 +394,7 @@ header {
 
 footer {
     padding-block: 80px;
-    background-color: #ebf2fa;
+    background-color: gray;
 }
 
 .link-column {
@@ -410,7 +411,7 @@ footer {
 /* subfooter */
 
 .subfooter {
-    background-color: #b9cde4;
+    background-color:black;
     padding: var(--padding-inline-section);
 }
 
