@@ -35,7 +35,7 @@
                     <li><a href="resources.html" class="hover-link">Resources</a></li>
                     <li><a href="signin.html" class="hover-link primary-button">Sign in</a></li>
                     <li><a href="signup.html" class="hover-link primary-button">Sign up</a></li>
-                    <img src="moon.png" id="icon">
+                   
                 </ul>
             </div>
             <a href="#" class="nav-toggle hover-link" id="nav-toggle">
@@ -267,27 +267,6 @@
     </div>
 
     <script src="https://kit.fontawesome.com/c1fc3d2826.js" crossorigin="anonymous"></script>
-
-    <script>
-        const toggleButton = document.getElementById('nav-toggle');
-        const navLinks = document.getElementById('nav-links');
-
-        toggleButton.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        })
-
-        var icon=document.getElementById("icon")
-
-        icon.onclick=function(){
-            document.body.classList.toggle("dark-theme");
-            if(document.body.classList.contains("dark-theme")){
-                icon.src="sun.png";
-            }
-            else{
-                icon.src="moon.png";
-            }
-        }
-    </script>
 
 </body>
 </html>
