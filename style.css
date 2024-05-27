@@ -76,7 +76,14 @@ ul {
 .flex {
     display: flex;
     align-items: center;
+    
 }
+
+.get {
+    background-color: rgb(138, 31, 231);
+    text-decoration: none;
+}
+
 
 .hover-link {
     color: var(--primary-text-color);
