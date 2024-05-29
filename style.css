@@ -109,8 +109,8 @@ ul {
     transform: scale(1.02);
     transition: 0.3s ease-in-out;
 }
-
-/* top banner */
+<!--No need for thi banner so just comment it out  -->
+<!-- /* top banner */
 
 .top-banner {
     background-image: url('asset\ 30.png');
@@ -122,25 +122,26 @@ ul {
     color: white;
     padding: 15px 30px;
     text-align: center;
-}
+}  -->
+
 
 /* nav bar */
 
 .main-nav {
-    margin-top: 40px;
+    
     justify-content: space-between;
 
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     padding: 10px 0;
-    margin-left: 50px;
+    
 
     background-color: #ccc
 }
 
 .company-logo img {
-    width: 200px;
+    width: 100px;
 
     visibility: visible;
 
