@@ -406,18 +406,20 @@ header {
 
 footer {
     padding-block: 80px;
-    background-color: gray;
+    background-color: rgb(87, 53, 212);
 }
 
 .link-column {
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
+    color: #00fff2;
 }
 
 .footer-container {
     align-items: flex-start;
     justify-content: space-between;
+    text-decoration: none;
 }
 
 /* subfooter */
