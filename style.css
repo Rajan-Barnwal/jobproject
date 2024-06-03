@@ -157,7 +157,8 @@ ul {
   left: 0;
   width: 100%;
   padding: 0px;
-  background-color: rgb(153, 149, 149);
+  background-color: rgb(219, 25, 25);
+  font-weight: 500;
 }
 .main-nav {
   margin-top: 40px;
@@ -169,7 +170,7 @@ ul {
   padding: 10px 0;
   margin-left: 50px;
 
-  background-color: #1f1d1d;
+  background-color: #620000;
 }
 
 .company-logo img {
@@ -190,12 +191,12 @@ ul {
 }
 .nav-links a {
   text-decoration: none;
-  border: 1px transparent solid;
-  border-radius: 2px;
-  padding: 7px;
+  border: 3px transparent solid;
+  border-radius: 20px;
+  padding: 5px;
 }
 .nav-links a:hover {
-  background-color: #ebf2fa;
+  background-color: #0c243f;
 
   .nav-links ul {
     list-style: none;
