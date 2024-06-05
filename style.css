@@ -654,3 +654,11 @@ button {
   background: linear-gradient(270deg, #e4f1ff, #cce5ff);
   color: var(--accent-color);
 }
+
+#nav-links.active {
+  display: block;
+}
+.dark-theme {
+  background-color: #333;
+  color: #fff;
+}
