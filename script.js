@@ -1,20 +1,26 @@
 // Validation for sign-up form
-document.getElementById("signUpForm").addEventListener("submit", function(event) {
-    var username = document.getElementById("signUpUsername").value;
-    var email = document.getElementById("signUpEmail").value;
-    var password = document.getElementById("signUpPassword").value;
+document.getElementById("signup-form").addEventListener("submit", function(event) {
+    var username = document.getElementById("username").value;
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    var password1 = document.getElementById("password1").value;
 
     // Basic email validation
     if (!isValidEmail(email)) {
-        document.getElementById("signUpError").innerText = "Invalid email address";
+        alert("Invalid email address");
         event.preventDefault(); // Prevent form submission
         return false;
     }
 
     // Basic password validation
     if (password.length < 6) {
-        document.getElementById("signUpError").innerText = "Password must be at least 6 characters long";
+        alert("Password must be at least 6 characters long");
         event.preventDefault(); // Prevent form submission
+        return false;
+    }
+    if(password!=password1){
+        alert("Password mismatch");
+        event.preventDefault();
         return false;
     }
 
