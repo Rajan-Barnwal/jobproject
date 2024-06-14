@@ -40,13 +40,13 @@
             <li><a href="pricing.html" class="hover-link">Pricing</a></li>
             <li><a href="resources.html" class="hover-link">Resources</a></li>
             <li>
-              <a href="signin.html" class="btn hover-link text-light"
-                >Sign in</a
+              <a href="signin.html" class="hover-link"
+                >SignIn</a
               >
             </li>
             <li>
-              <a href="signup.html" class="btn hover-link text-light"
-                >Sign up</a
+              <a href="signup.html" class="hover-link"
+                >SignUp</a
               >
             </li>
             <img src="moon.png" id="icon" />
@@ -355,23 +355,25 @@
     ></script>
 
     <script>
-      const toggleButton = document.getElementById("nav-toggle");
-      const navLinks = document.getElementById("nav-links");
+      document.addEventListener("DOMContentLoaded", () => {
+        const toggleButton = document.getElementById("nav-toggle");
+        const navLinks = document.getElementById("nav-links");
+        const icon = document.getElementById("icon");
 
-      toggleButton.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
+        toggleButton.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+        });
+
+        icon.addEventListener("click", () => {
+          document.body.classList.toggle("dark-theme");
+          if (document.body.classList.contains("dark-theme")) {
+            icon.src = "sun.png";
+          } else {
+            icon.src = "moon.png";
+          }
+        });
       });
-
-      var icon = document.getElementById("icon");
-
-      icon.onclick = function () {
-        document.body.classList.toggle("dark-theme");
-        if (document.body.classList.contains("dark-theme")) {
-          icon.src = "sun.png";
-        } else {
-          icon.src = "moon.png";
-        }
-      };
     </script>
+
   </body>
 </html>
