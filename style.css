@@ -158,7 +158,9 @@ ul {
   width: 100%;
   padding: 0px;
   background-color: rgb(153, 149, 149);
+  background-color: var(--accent-color);
 }
+
 .main-nav {
   margin-top: 40px;
   justify-content: space-between;
