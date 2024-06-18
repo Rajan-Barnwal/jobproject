@@ -6,18 +6,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+    animation: backgroundAnimation 10s ease infinite alternate;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #333333;
+}
+
+/* Animation for background */
+@keyframes backgroundAnimation {
+    0% {
+        background-color: #f5f5f5;
+    }
+    50% {
+        background-color: #eaeaea;
+    }
+    100% {
+        background-color: #f5f5f5;
+    }
+}
+
+/* Rest of the styles remain the same */
+
+
+.heading {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+.message {
+    margin-top: 20px;
+}
+
+.signup-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+    </style>
 </head>
 <body>
-    <div class="containers">
-        <h2>Sign In</h2>
-        <form id="signInForm">
-            <input type="text" id="signInUsername" placeholder="Username" required>
-            <input type="password" id="signInPassword" placeholder="Password" required>
-            <button type="submit">Sign In</button>
+    <div class="container">
+        <h2 class="heading">Sign In</h2>
+        <form id="signInForm" class="form">
+            <input type="text" id="signInUsername" placeholder="Username" class="input-field" required>
+            <input type="password" id="signInPassword" placeholder="Password" class="input-field" required>
+            <button type="submit" class="submit-button">Sign In</button>
         </form>
         <p id="signInError" class="error-message"></p>
-        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+        <p class="message">Don't have an account? <a href="signup.html" class="signup-link">Sign Up</a></p>
     </div>
     <script src="script.js"></script>
 </body>
 </html>
+

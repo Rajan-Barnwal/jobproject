@@ -9,10 +9,12 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f8f9fa; /* Updated background color */
         }
 
         header {
-            background-color: #f0f0f0;
+            background-color: #007bff; /* Updated header background color */
+            color: #fff; /* Updated header text color */
             padding: 20px;
             text-align: center;
         }
@@ -25,20 +27,24 @@
         }
 
         .product {
-            width: 300px;
-            margin: 20px;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
+    width: 300px;
+    margin: 20px;
+    padding: 50px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
         .product img {
             width: 100%;
             border-radius: 5px;
+            margin-bottom: 10px; /* Added margin to separate image from text */
         }
 
         .product h2 {
             margin-top: 10px;
+            color: #333; /* Updated heading color */
         }
 
         .product p {
@@ -58,10 +64,11 @@
             border-radius: 5px;
             text-decoration: none;
             margin-top: 15px;
+            transition: background-color 0.3s ease; /* Added transition for button */
         }
 
         .button:hover {
-            background-color: #0056b3;
+            background-color: #0056b3; /* Updated hover background color */
         }
     </style>
 </head>
@@ -73,7 +80,7 @@
 
     <main>
         <section class="product">
-            <img src="product1.jpg" alt="Product 1">
+            <img src="" alt="Product 1">
             <h2>Product 1</h2>
             <p>Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <p>Price: $XX.XX</p>
@@ -81,7 +88,7 @@
         </section>
 
         <section class="product">
-            <img src="product2.jpg" alt="Product 2">
+            <img src="" alt="Product 2">
             <h2>Product 2</h2>
             <p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <p>Price: $XX.XX</p>
