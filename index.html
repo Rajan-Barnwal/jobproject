@@ -14,6 +14,53 @@
     />
 
     <link rel="stylesheet" href="media-queries.css" />
+    <style>
+     
+     /* Add this to your CSS file */
+
+/* Default navbar styles */
+.navbar {
+  background: rgba(0, 0, 0, 0.8); /* Aesthetic dark color */
+  backdrop-filter: blur(10px); /* Blur effect */
+  transition: background 0.3s, backdrop-filter 0.3s;
+}
+
+/* Navbar styles when scrolled */
+.navbar.scrolled {
+  background: rgba(0, 0, 0, 0.5); /* Less opacity on scroll */
+  backdrop-filter: blur(15px); /* More blur on scroll */
+}
+
+/* Dark mode styles for the navbar */
+.dark-theme .navbar {
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
+}
+
+/* Dark mode styles for the navbar links */
+.dark-theme .hover-link {
+  color: #000;
+}
+
+/* Dark mode icon change */
+.dark-theme #icon {
+  content: url('sun.png');
+}
+
+/* Dark mode styles for the body */
+body.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Light mode styles for the body */
+body.light-theme {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+
+    </style>
   </head>
   <body>
     <!-- top banner -->
@@ -26,37 +73,31 @@
       </div>
     </div>
 
-    <!-- nav bar -->
-    <nav class="navbar">
-      <div class="container-fluid">
-        <!--<div class="container main-nav flex">-->
-        <a href="#" class="company-logo">
-          <img src="./assets/asset 1.png" alt="company logo" />
-        </a>
-        <div class="nav-links" id="nav-links">
-          <ul class="flex">
-            <li><a href="products.html" class="hover-link">Products</a></li>
-            <li><a href="customers.html" class="hover-link">Customer</a></li>
-            <li><a href="pricing.html" class="hover-link">Pricing</a></li>
-            <li><a href="resources.html" class="hover-link">Resources</a></li>
-            <li>
-              <a href="signin.html" class="hover-link"
-                >SignIn</a
-              >
-            </li>
-            <li>
-              <a href="signup.html" class="hover-link"
-                >SignUp</a
-              >
-            </li>
-            <img src="moon.png" id="icon" />
-          </ul>
-        </div>
-        <a href="#" class="nav-toggle hover-link" id="nav-toggle">
-          <i class="fa-solid fa-bars"></i>
-        </a>
-      </div>
-    </nav>
+<!-- nav bar -->
+<nav class="navbar" style="background-color: plum;">
+  <div class="container-fluid">
+    <a href="#" class="company-logo">
+      <img src="./assets/asset 1.png" alt="company logo" />
+    </a>
+    <div class="nav-links" id="nav-links">
+      <ul class="flex">
+        <li><a href="products.html" class="hover-link" style="border-radius: 30%;">Products</a></li>
+        <li><a href="customers.html" class="hover-link"style="border-radius: 30%;">Customer</a></li>
+        <li><a href="pricing.html" class="hover-link"style="border-radius: 30%;">Pricing</a></li>
+        <li><a href="resources.html" class="hover-link"style="border-radius: 30%;">Resources</a></li>
+        <li><a href="signin.html" class="hover-link"style="border-radius: 30%;">Sign in</a></li>
+        <li><a href="signup.html" class="hover-link"style="border-radius: 30%;">Sign Up</a></li>
+        
+      </ul>
+    </div>
+    <a href="#" class="nav-toggle hover-link" id="nav-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </a>
+  </div>
+</nav>
+
+
+
 
     <!-- header section -->
     <header>
@@ -373,6 +414,47 @@
           }
         });
       });
+
+
+      /* Add this to your script */
+
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleButton = document.getElementById("nav-toggle");
+  const navLinks = document.getElementById("nav-links");
+  const icon = document.getElementById("icon");
+
+  // Toggle navbar links on mobile
+  toggleButton.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+
+  // Toggle dark mode
+  icon.addEventListener("click", () => {
+    document.body.classList.toggle("dark-theme");
+    document.body.classList.toggle("light-theme");
+    if (document.body.classList.contains("dark-theme")) {
+      icon.src = "sun.png";
+    } else {
+      icon.src = "moon.png";
+    }
+  });
+
+  // Blur effect on scroll
+  window.addEventListener("scroll", () => {
+    const navbar = document.querySelector(".navbar");
+    if (window.scrollY > 50) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
+});
+
+
+
+
+
+
     </script>
 
   </body>

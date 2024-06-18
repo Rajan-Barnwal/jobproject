@@ -86,17 +86,21 @@ ul {
 .flex {
   display: flex;
   align-items: center;
+  
 }
 
 .hover-link {
-  color: var(--primary-text-color);
-  transition: 0.2s ease-out;
+  color:rgb(246, 246, 246);
+  border-bottom: 1px solid transparent; /* Initial border set to transparent */
+  transition: color 0.2s ease-out, border-color 0.2s ease-out; /* Added border-color transition */
   text-decoration: none;
 }
 
 .hover-link:hover {
-  color: var(--accent-color);
+  color: blue; /* Change color on hover */
+  border-color: blue; /* Change border color on hover */
 }
+
 
 .primary-button {
   background-color: var(--accent-color);
@@ -152,12 +156,18 @@ ul {
 
 /* nav bar */
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 0px;
-  background-color: rgb(153, 149, 149);
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+.navbar {
+  background: rgba(190, 109, 210, 0.8);
+  backdrop-filter: blur(10px);
+ 
 }
 .main-nav {
   margin-top: 40px;
@@ -169,7 +179,8 @@ ul {
   padding: 10px 0;
   margin-left: 50px;
 
-  background-color: #1f1d1d;
+  background-color: #6ae1b8;
+
 }
 
 .company-logo img {
@@ -178,6 +189,8 @@ ul {
   visibility: visible;
 
   padding: 20px;
+
+  
 }
 
 .nav-links {
@@ -248,6 +261,7 @@ ul {
 
 header {
   padding: 50px var(--padding-inline-section) 0;
+  background-color: bisque;
 }
 
 .header-section {
@@ -310,6 +324,7 @@ header {
   background-image: url(asset\ 32.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-color: silver;
 }
 
 .features-header {
@@ -333,6 +348,8 @@ header {
   gap: 20px;
   max-width: 30%;
   text-align: center;
+  margin-bottom: 50px;
+  
 }
 .features-card:hover {
   transform: scale(1.02);
@@ -426,11 +443,12 @@ header {
   gap: 30px;
   color: var(--primary-text-color);
   text-align: center;
+ 
 }
 
 .cta-section {
   padding: 120px var(--padding-inline-section) 80px;
-  background-color: #183b54;
+  background-color: lightslategrey;
 }
 
 .cta-section-container p {
@@ -661,4 +679,21 @@ button {
 .dark-theme {
   background-color: #333;
   color: #fff;
+}
+.container-fluid{
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.companies-section{
+  background-color: #acdbcb;
+}
+.logo {
+  border-radius: 30px;
+  height: 46px;
+  filter: grayscale(100%);
+  opacity: 0.75;
+  margin-bottom: 20px;
 }
