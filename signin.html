@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="containers">
+    <div class="container">
         <h2>Sign In</h2>
         <form id="signInForm">
             <input type="text" id="signInUsername" placeholder="Username" required>
@@ -16,7 +16,13 @@
             <button type="submit">Sign In</button>
         </form>
         <p id="signInError" class="error-message"></p>
+        <div class="oauth-buttons">
+            <button id="googleSignIn" class="oauth-button">Sign in with Google</button>
+            <button id="appleSignIn" class="oauth-button">Sign in with Apple</button>
+            <button id="microsoftSignIn" class="oauth-button">Sign in with Microsoft</button>
+        </div>
         <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+       
     </div>
     <script src="script.js"></script>
 </body>
