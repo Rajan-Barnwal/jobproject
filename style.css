@@ -9,7 +9,7 @@
 }
 
 :root {
-  --primary-text-color: #fff;
+  --primary-text-color:rgb(54, 9, 9);
   --secondary-text-color: #000;
   --accent-color: #2294ed;
   --accent-color-dark: #1d69a3;
@@ -157,7 +157,7 @@ ul {
   left: 0;
   width: 100%;
   padding: 0px;
-  background-color: rgb(153, 149, 149);
+  background-color: bisque;
 }
 .main-nav {
   margin-top: 40px;
@@ -182,6 +182,9 @@ ul {
 
 .nav-links {
   flex-basis: 730px;
+  transition:background-color 0.3s;
+  color:black;
+  
 }
 
 .nav-links ul {
@@ -195,7 +198,12 @@ ul {
   padding: 7px;
 }
 .nav-links a:hover {
-  background-color: #ebf2fa;
+  background-color: rgb(172, 95, 47);
+  height:40px;
+  width:200p;
+  border-radius: 10%;
+  color:white ;
+  text-decoration: double;
 
   .nav-links ul {
     list-style: none;
