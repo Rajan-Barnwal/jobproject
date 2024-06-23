@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="containers">
+    <div class="container">
         <h2>Sign Up</h2>
         <form id="signUpForm">
             <input type="text" id="signUpUsername" placeholder="Username" required>
@@ -18,6 +18,12 @@
             <button type="submit">Sign Up</button>
         </form>
         <p id="signUpError" class="error-message"></p>
+        <p>Or sign up with:</p>
+        <div class="social-buttons">
+            <button id="googleSignUp" class="social-button google">Google</button>
+            <button id="appleSignUp" class="social-button apple">Apple</button>
+            <button id="microsoftSignUp" class="social-button microsoft">Microsoft</button>
+        </div>
         <p>Already have an account? <a href="signin.html">Sign In</a></p>
     </div>
     <script src="script.js"></script>
