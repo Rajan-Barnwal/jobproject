@@ -86,6 +86,7 @@ ul {
 .flex {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .hover-link {
@@ -387,13 +388,14 @@ header {
 }
 
 .examples-area {
-  justify-content: space-between;
+  justify-content: center;
   margin-block: 30px;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .examples-card {
-  width: 23%;
+  width: 200px;
   position: relative;
   height: 300px;
   background: var(--secondary-text-color);
@@ -401,6 +403,7 @@ header {
     url(asset\ 35.jpeg);
   background-size: cover;
   transition: 0.2s ease-out;
+  border-radius: 15px;
 }
 
 .examples-card:hover {
