@@ -1,3 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap");
+
+/* resets */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-text-color:rgb(54, 9, 9);
+  --secondary-text-color: #000;
+  --accent-color: #2294ed;
+  --accent-color-dark: #1d69a3;
+  --padding-inline-section: 20px;
+}
+.dark-theme {
+  --primary-text-color: #000;
+  --secondary-text-color: #fff;
+  --accent-color: #1d69a3;
+  --accent-color-dark: #2294ed;
+}
 body {
   margin: 100px;
   margin-left: 525px;
@@ -104,10 +127,17 @@ body {
   line-height: 1.25rem;
   color: rgba(156, 163, 175, 1);
 }
-
 .social-icons {
   display: flex;
   justify-content: center;
+/* nav bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0px;
+  background-color: bisque;
 }
 
 .social-icons .icon {
@@ -124,10 +154,16 @@ body {
   animation: buttonHover 0.5s ease-in-out forwards;
 }
 
+
 .social-icons .icon svg {
   height: 1.25rem;
   width: 1.25rem;
   fill: #fff;
+.nav-links {
+  flex-basis: 730px;
+  transition:background-color 0.3s;
+  color:black;
+  
 }
 
 .signup {
@@ -136,6 +172,13 @@ body {
   line-height: 1rem;
   color: rgba(156, 163, 175, 1);
 }
+.nav-links a:hover {
+  background-color: rgb(172, 95, 47);
+  height:40px;
+  width:200p;
+  border-radius: 10%;
+  color:white ;
+  text-decoration: double;
 
 /* Media Queries for Responsiveness */
 

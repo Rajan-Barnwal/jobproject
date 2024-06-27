@@ -11,6 +11,7 @@
     <div class="form-container">
         <p class="title">Sign Up</p>
         <form id="signUpForm">
+
             <div class="input-group">
                 <label for="username">Username</label>
                 <input type="text" name="username" id="signUpUsername" placeholder="Enter Your Username" required>
@@ -26,6 +27,12 @@
             <div class="error-message" id="signUpError"></div>
             <br>
             <button type="submit" class="sign">Sign Up</button>
+=======
+            <input type="text" id="signUpUsername" placeholder="Username" required>
+            <input type="email" id="signUpEmail" placeholder="Email" required>
+            <label for="signUpPassword"></label>
+           <input type="password" id="signUpPassword" name="psw"  placeholder="Password"   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+            <button type="submit">Sign Up</button>
         </form>
         <div class="social-message">
             <div class="line"></div>
