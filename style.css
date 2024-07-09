@@ -290,7 +290,8 @@ header {
 .logos {
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
+  margin-left: -1200px;
 }
 
 .logo {
