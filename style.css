@@ -9,7 +9,7 @@
 }
 
 :root {
-  --primary-text-color:rgb(54, 9, 9);
+  --primary-text-color: rgb(54, 9, 9);
   --secondary-text-color: #000;
   --accent-color: #2294ed;
   --accent-color-dark: #1d69a3;
@@ -159,51 +159,71 @@ ul {
   padding: 0px;
   background-color: bisque;
 }
-.main-nav {
-  margin-top: 40px;
-  justify-content: space-between;
 
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 10px 0;
-  margin-left: 50px;
-
-  background-color: #1f1d1d;
-}
-
-.company-logo img {
-  width: 200px;
-
-  visibility: visible;
-
-  padding: 20px;
-}
-
-.nav-links {
-  flex-basis: 730px;
-  transition:background-color 0.3s;
-  color:black;
-  
-}
-
-.nav-links ul {
-  justify-content: end;
-  gap: 40px;
-}
 .nav-links a {
   text-decoration: none;
   border: 1px transparent solid;
   border-radius: 2px;
   padding: 7px;
+  margin-right: 20px;
+  padding-left: 10px;
 }
-.nav-links a:hover {
-  background-color: rgb(172, 95, 47);
-  height:40px;
-  width:200p;
-  border-radius: 10%;
-  color:white ;
-  text-decoration: double;
+
+.active {
+  background-color: #04aa6d;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+
+  .main-nav {
+    margin-top: 40px;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    margin-left: 50px;
+
+    background-color: #1f1d1d;
+  }
+
+  .company-logo img {
+    width: 200px;
+
+    visibility: visible;
+
+    padding: 20px;
+  }
+
+  .nav-links {
+    flex-basis: 730px;
+    transition: background-color 0.3s;
+    color: black;
+  }
+
+  .nav-links ul {
+    justify-content: end;
+    gap: 40px;
+  }
+  .nav-links a {
+    text-decoration: none;
+    border: 1px transparent solid;
+    border-radius: 2px;
+    padding: 7px;
+  }
+  .nav-links a:hover {
+    background-color: rgb(172, 95, 47);
+    height: 40px;
+    width: 200p;
+    border-radius: 10%;
+    color: white;
+    text-decoration: double;
+  }
 
   .nav-links ul {
     list-style: none;

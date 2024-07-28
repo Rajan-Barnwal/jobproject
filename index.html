@@ -12,6 +12,10 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <link rel="stylesheet" href="media-queries.css" />
   </head>
@@ -31,23 +35,35 @@
       <div class="container-fluid">
         <!--<div class="container main-nav flex">-->
         <a href="#" class="company-logo">
-          <img src="./assets/asset 1.png" alt="company logo" />
+          <img src="./assets/asset 1.png" alt="company logo" width="300px" />
         </a>
         <div class="nav-links" id="nav-links">
           <ul class="flex">
-            <li><a href="products.html" class="hover-link">Products</a></li>
-            <li><a href="customers.html" class="hover-link">Customer</a></li>
-            <li><a href="pricing.html" class="hover-link">Pricing</a></li>
-            <li><a href="resources.html" class="hover-link">Resources</a></li>
             <li>
-              <a href="signin.html" class="hover-link"
-                >SignIn</a
+              <a href="products.html" class="hover-link"
+                ><i class="fa-solid fa-mug-saucer"></i><span style="padding-left: 10px;"></span>Products</span></a
               >
             </li>
             <li>
-              <a href="signup.html" class="hover-link"
-                >SignUp</a
+              <a href="customers.html" class="hover-link"
+                ><i class="fa-solid fa-user"></i><span style="padding-left: 10px;">Customer</span></a
               >
+            </li>
+            <li>
+              <a href="pricing.html" class="hover-link"
+                ><i class="fa-solid fa-barcode"></i><span style="padding-left: 10px;">Pricing</span></a
+              >
+            </li>
+            <li>
+              <a href="resources.html" class="hover-link"
+                ><i class="fa-solid fa-book"></i><span style="padding-left: 10px;">Resources</span></a
+              >
+            </li>
+            <li>
+              <a href="signin.html" class="hover-link"><span style="padding-left: 10px;">Sign-In</span></a>
+            </li>
+            <li>
+              <a href="signup.html" class="hover-link"><span style="padding-left: 10px;">Sign-Up</span></a>
             </li>
             <img src="moon.png" id="icon" />
           </ul>
@@ -374,6 +390,5 @@
         });
       });
     </script>
-
   </body>
 </html>
