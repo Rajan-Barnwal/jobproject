@@ -11,7 +11,7 @@
 :root {
   --primary-text-color:rgb(54, 9, 9);
   --secondary-text-color: #000;
-  --accent-color: #2294ed;
+  --accent-color: #0091ff;
   --accent-color-dark: #1d69a3;
   --padding-inline-section: 20px;
 }
@@ -669,4 +669,105 @@ button {
 .dark-theme {
   background-color: #333;
   color: #fff;
+}
+
+/* SighIn Page */
+
+body.sign-body {
+  font-family: 'Arial', sans-serif;
+  /* background: linear-gradient(to right, #6a11cb, #2575fc); */
+  background: rgb(255, 253, 253);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.form-container {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+
+.form-container h1 {
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: #333;
+}
+.form-container input {
+  width: 100%;
+  padding: 13px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+}
+
+.form-container input:focus {
+  border-color: #2575fc;
+  outline: none;
+}
+.form-container button {
+  width: 100%;
+  padding: 13px;
+  background: #2575fc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 20px;
+}
+.form-container button:hover {
+  background: #1e63d3;
+}
+
+.form-container .message {
+  margin-top: 20px;
+  color: #777;
+  font-size: 0.9em;
+}
+
+.form-container .message a {
+  color: #2575fc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+
+.form-container .message a:hover {
+  color: #1e63d3;
+}
+
+
+/* signUp */
+.form-container>form>h2{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+.already-account{
+  text-align: center;
+  /* border: solid black; */
+  /* margin-top: -10px; */
+}
+#signUp{
+  text-align: center;
+  font-size: small;
 }
