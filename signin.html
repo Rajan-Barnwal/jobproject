@@ -4,39 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In</title>
     <link rel="stylesheet" href="style.css">
+    <title>Sign In</title>
+    
 </head>
-<body>
-    <div class="wrapper">
-        <div class="card-switch">
-            <label class="switch">
-               <input type="checkbox" class="toggle">
-               <span class="slider"></span>
-               <span class="card-side"></span>
-               <div class="flip-card__inner">
-                  <div class="flip-card__front">
-                     <div class="title">Log in</div>
-                     <form class="flip-card__form" action="">
-                        <input class="flip-card__input" name="email" placeholder="Email" type="email">
-                        <input class="flip-card__input" name="password" placeholder="Password" type="password">
-                        <button class="flip-card__btn">Let`s go!</button>
-                     </form>
-                  </div>
-                  <div class="flip-card__back">
-                     <div class="title">Sign up</div>
-                     <form class="flip-card__form" action="">
-                        <input class="flip-card__input" placeholder="Name" type="name">
-                        <input class="flip-card__input" name="email" placeholder="Email" type="email">
-                        <input class="flip-card__input" name="password" placeholder="Password" type="password">
-                        <button class="flip-card__btn">Confirm!</button>
-                     </form>
-                  </div>
-               </div>
-            </label>
-        </div>   
-   </div>
-        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+<body class="sign-body">
+    <div class="container">
+        <div class="form-container">
+            <form action="login.php" method="post">
+                <h1>Sign In</h1>
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit" name="submit">Sign In</button>
+                <p class="message">Not registered? <a href="signup.html">Create an account</a></p>
+            </form>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
