@@ -392,7 +392,7 @@ header {
   flex-wrap: wrap;
 }
 
-.examples-card {
+ .examples-card {
   width: 23%;
   position: relative;
   height: 300px;
@@ -401,7 +401,7 @@ header {
     url(asset\ 35.jpeg);
   background-size: cover;
   transition: 0.2s ease-out;
-}
+} 
 
 .examples-card:hover {
   box-shadow: 0 0 10px #888;
