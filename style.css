@@ -141,6 +141,7 @@ ul {
   background-image: url("asset\ 30.png");
   background-color: #4fb3d4;
   background-size: 300px;
+  margin-top: 80px;
 }
 
 .banner-text {
@@ -152,9 +153,10 @@ ul {
 
 /* nav bar */
 .navbar {
-  position: fixed;
+  position: fixed !important;
   top: 0;
   left: 0;
+  z-index: 9999;
   width: 100%;
   padding: 0px;
   background-color: bisque;
