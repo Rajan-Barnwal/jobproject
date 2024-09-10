@@ -390,37 +390,42 @@ header {
   justify-content: space-between;
   margin-block: 30px;
   flex-wrap: wrap;
+  margin-left: 1rem;
 }
 
  .examples-card {
-  width: 23%;
+  text-decoration: none;
+    width: 23%;
   position: relative;
-  height: 300px;
+  padding: 15px;
+  height: 250px;
   background: var(--secondary-text-color);
-  background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)),
+  background: linear-gradient(rgba(162, 159, 159, 0.1), rgba(141, 134, 134, 0.1)),
     url(asset\ 35.jpeg);
   background-size: cover;
-  transition: 0.2s ease-out;
+  transition: 0.3s ease-out;
 } 
 
 .examples-card:hover {
-  box-shadow: 0 0 10px #888;
+  box-shadow: 0 0 10px #8d8b8b;
 }
 
+
 .examples-card:nth-child(3) {
-  background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)),
-    url(asset\ 36.jpeg);
+  background: linear-gradient(rgba(162, 159, 159, 0.1), rgba(141, 134, 134, 0.1)),
+    url(asset\36.jpeg);
   background-size: cover;
 }
 
 .examples-card:nth-child(4) {
-  background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)),
-    url(asset\ 37.jpeg);
+  background: linear-gradient(rgba(162, 159, 159, 0.1), rgba(141, 134, 134, 0.1)),
+  url(asset\37.jpeg);
   background-size: cover;
 }
 
 .card-text {
-  position: absolute;
+  /* position: absolute; */
+  font-size: 23px;
   bottom: 20px;
   left: 20px;
   right: 20px;
@@ -438,9 +443,12 @@ header {
 
 .cta-section {
   padding: 120px var(--padding-inline-section) 80px;
-  background-color: #183b54;
+  background-color: #549ed3;
 }
-
+.primary-button{
+  
+  background-color: #11507d;
+}
 .cta-section-container p {
   color: var(--primary-color);
   margin-top: 20px;
