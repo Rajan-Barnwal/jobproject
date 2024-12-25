@@ -7,6 +7,24 @@
   padding: 0;
   box-sizing: border-box;
 }
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 15px;
+  font-size: 16px;
+  display: none; /* Initially hidden */
+  cursor: pointer;
+  z-index: 999;
+}
+
+#btn-back-to-top:hover {
+  background-color: #0056b3;
+}
 
 :root {
   --primary-text-color:rgb(54, 9, 9);

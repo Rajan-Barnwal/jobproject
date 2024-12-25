@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+
     <style>
       .flex {
         display: flex;
@@ -271,7 +274,13 @@
     </section>
 
     <!-- cta section -->
-
+    <button
+    type="button"
+    class="btn btn-danger btn-floating btn-lg"
+    id="btn-back-to-top"
+    >
+<i class="fas fa-arrow-up"></i>
+</button>
     <section class="cta-section">
       <div class="container flex cta-section-container">
         <h2>Start testing today</h2>
@@ -279,6 +288,13 @@
         <a href="#" class="primary-button">Get Started</a>
       </div>
     </section>
+    
+<!-- back to top button -->
+<button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- Optional JavaScript -->
 
     <!-- footer -->
 
@@ -389,7 +405,26 @@
           }
         });
       });
-    </script>
+      
+  var mybutton = document.getElementById("btn-back-to-top");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  };
+
+  // When the user clicks on the button, scroll to the top of the document
+  mybutton.onclick = function () {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+  };
+</script>
+
+   
 
   </body>
 </html>
